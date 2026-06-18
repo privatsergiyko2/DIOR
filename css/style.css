@@ -15,6 +15,13 @@ box-sizing: inherit;
     margin:0 auto;
 }
 
+button {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -367,9 +374,112 @@ font-weight: bold;
     margin-left: auto;
     max-width: 997px;
     min-height: 600px;
-    background-image: url(/images/video-bg.jpg);
+    background-image: url(../images/12\ 1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.video__btn {
+ 
+}
+
+
+.footer {
+    background-color: #C4A9CD;
+    padding: 66px 0 100px;
+}
+
+
+.footer__top {
+    margin-bottom: 70px;
+    display: flex;
+    gap: 0 70px;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    margin-right: 10px;
+}
+
+.footer__item-title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.footer__item + .footer__item {
+    margin-top: 70px;
+}
+
+.footer__items {
+   flex-basis: 387px; 
+}
+
+.footer__item-form {
+    position: relative;
+}
+
+.footer__item-input {
+width: 100%;
+display: block;
+padding: 10px 60px 10px 0;
+border: none;
+border-bottom: 1px solid black;
+background-color: #C4A9CD;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 14px;
+color: #1B1B1B;
+}
+
+.footer__item-input::placeholder {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size:12px ;
+    color: black;
+    opacity: 0.4;
+}
+
+.footer__item-btn {
+position: absolute;
+right: 0;
+top: 10px;
+
+}
+
+.footer__item-list li {
+   padding-top:10px ;
+}
+
+.footer__social-list {
+    margin-right: 105px;
+    margin-left: 10px;
+    align-self: flex-end;
+}
+
+.footer__social-item + .footer__social-item {
+   margin-top: 20px;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 105px;
+}
+
+.footer__nav-list {
+    display: flex;
+    gap:0 20px;
+}
+
+@media (max-width: 1500px) {
+   
+}
+
+
+
 
