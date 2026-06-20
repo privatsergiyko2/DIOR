@@ -2,9 +2,14 @@ const swiperTop = new Swiper('.top__swiper', {
 //   direction: 'horizontal',
  effect: 'fade' ,
 
+
  autoplay: {
-    delay:3500,
+    delay:200000,
     disableOnInteraction: false,
+ },
+
+  pagination: {
+  el: ".swiper-pagination"
  },
 
   navigation: {
@@ -15,14 +20,16 @@ const swiperTop = new Swiper('.top__swiper', {
 
 
 const swiperAbout = new Swiper(".about__slider", {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      freeMode: true,
-      navigation: {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    grabCursor: true,
+    mousewheel: true,
+
+    navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    });
+});
 
     document.querySelectorAll(".accordeon__triger").forEach((item) => {
         item.addEventListener("click", () => {
